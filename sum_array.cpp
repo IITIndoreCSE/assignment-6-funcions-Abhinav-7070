@@ -4,16 +4,22 @@ using namespace std;
 
 int sumArray(const vector<int>& arr) {
     // TODO: complete the function as per instructions
-    
+    int sum = 0;
+    for(int i=0;i < arr.size() ;i++){
+        int val=arr[i];
+        sum+=val;
+    }
+    return sum;    
 }
 
 int main() {
     int n; cin >> n;
     vector<int> arr(n);
-    for (int i=0; i<n; i++)
+    for (int i=0; i<n; i++){
         cin >> arr[i];
+    }
 
     cout << sumArray(arr) << "\n";
     return 0;
+   
 }
-
